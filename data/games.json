@@ -1,0 +1,242 @@
+{
+    "data": [
+        {
+            "id": "1",
+            "gameName": "Elden Ring",
+            "price": 4000,
+            "categories": "Mundo Abierto",
+            "image":  "../img/elde-ring.webp"
+        },
+        {
+            "id": "2",
+            "gameName": "Terraria",
+            "price":  130,
+            "categories": "Aventura",
+            "image": "../img/terrarialogo.webp"
+        },
+        {
+            "id": "3",
+            "gameName": "The Sims 4",
+            "price": 2099,
+            "categories": "Simulacion",
+            "image": "../img/sisms.jfif"
+        },
+        {
+            "id": "4",
+            "gameName": "Phasmophobia",
+            "price": 169,
+            "categories": "Horror",
+            "image": "../img/phasmo.jpg"
+        },
+        {
+            "id": "5",
+            "gameName": "A way out",
+            "price":  349,
+            "categories": "Aventura",
+            "image": "../img/away.jpg"
+        },
+        {
+            "id": "6",
+            "gameName": "Devour",
+            "price": 167,
+            "categories": "Horror",
+            "image": "../img/devour.jpg"
+        },
+        {
+            "id": "7",
+            "gameName": "Spore",
+            "price": 899,
+            "categories": "Mundo Abierto",
+            "image":  "../img/spore.jpg"
+        },
+        {
+            "id": "8",
+            "gameName": "League of Legends",
+            "price": 0,
+            "categories": "Estrategia",
+            "image": "../img/lol.jpg"
+        },
+        {
+            "id": "9",
+            "gameName": "Fornite",
+            "price": 200,
+            "categories": "Shooter",
+            "image": "../img/fornite.jpg"
+        },
+        {
+            "id": "10",
+            "gameName": "God of war",
+            "price": 3525,
+            "categories": "Aventura",
+            "image": "../img/godofwar.jpg"
+        },
+        {
+            "id": "11",
+            "gameName": "Rust",
+            "price": 1220,
+            "categories": "Mundo Abierto",
+            "image": "../img/rust.jpg"
+        },
+        {
+            "id": "12",
+            "gameName": "It Take Two",
+            "price":  1789,
+            "categories": "Aventura",
+            "image": "../img/ittaketwo.jpg"
+        },
+        {
+            "id": "14",
+            "gameName": "The Forest",
+            "price": 224,
+            "categories": "Horror",
+            "image": "../img/theforest.jpg"
+        },
+        {
+            "id": "15",
+            "gameName": "Grand Theft Auto V",
+            "price": 850,
+            "categories": "Mundo Abierto",
+            "image": "../img/gta.jfif"
+        },
+        {
+            "id": "16",
+            "gameName": "Forza Horizon 4",
+            "price": 1319,
+            "categories": "Conduccion",
+            "image": "../img/horizon.jpg"
+        },
+        {
+            "id": "17",
+            "gameName": "Asseto Corsa",
+            "price": 224,
+            "categories": "Conduccion",
+            "image": "../img/assetocorsa.jpg"
+        },
+        {
+            "id": "18",
+            "gameName": "Snowrunner",
+            "price": 1499,
+            "categories": "Conduccion",
+            "image": "../img/snowrunner.jfif"
+        },
+        {
+            "id": "19",
+            "gameName": "Cars",
+            "price": 67,
+            "categories": "Conduccion",
+            "image": "../img/cars.jpg"
+        },
+        {
+            "id": "20",
+            "gameName": "Redout 2",
+            "price": 1499,
+            "categories": "Conduccion",
+            "image": "../img/redout.jpg"
+        },
+        {
+            "id": "21",
+            "gameName": "Mx Bikes",
+            "price": 1499,
+            "categories": "Conduccion",
+            "image": "../img/mx-bikes.jpg"
+        },
+        {
+            "id": "22",
+            "gameName": "Call of Duty",
+            "price": 999,
+            "categories": "Shooter",
+            "image": "../img/callofduty.jpg"
+        },
+        {
+            "id": "23",
+            "gameName": "Halo",
+            "price": 799,
+            "categories": "Shooter",
+            "image": "../img/hallo.jpg"
+        },
+        {
+            "id": "24",
+            "gameName": "Apex",
+            "price": 100,
+            "categories": "Shooter",
+            "image": "../img/apex.jpg"
+        },
+        {
+            "id": "25",
+            "gameName": "Half Life",
+            "price": 524,
+            "categories": "Shooter, Horror",
+            "image": "../img/halflife.jpg"
+        },
+        {
+            "id": "26",
+            "gameName": "Dayz",
+            "price": 1499,
+            "categories": "Shooter",
+            "image": "../img/dayz.jpg"
+        },
+        {
+            "id": "27",
+            "gameName": "Destinity 2",
+            "price": 30,
+            "categories": "Shooter",
+            "image": "../img/destinity.jpg"
+        },
+        {
+            "id": "28",
+            "gameName": "Fifa22",
+            "price": 879,
+            "categories": "Simulacion",
+            "image": "../img/fifa.jpg"
+        },
+        {
+            "id": "29",
+            "gameName": "Proyect Zomboid",
+            "price": 150,
+            "categories": "Simulacion",
+            "image": "../img/zomboid.jpg"
+        },
+        {
+            "id": "30",
+            "gameName": "Planet Zoo",
+            "price": 1379,
+            "categories": "Simulacion, Estrategia",
+            "image": "../img/planetzoo.jpg"
+        },
+        {
+            "id": "31",
+            "gameName": "Dota 2",
+            "price": 10,
+            "categories": "Estrategia",
+            "image": "../img/dota.jpg"
+        },
+        {
+            "id": "32",
+            "gameName": "Dune",
+            "price": 840,
+            "categories": "Estrategia",
+            "image": "../img/dune.jpg"
+        },
+        {
+            "id": "33",
+            "gameName": "Age of Empire IV",
+            "price": 2249,
+            "categories": "Estrategia",
+            "image": "../img/ageofempire.jfif"
+        },
+        {
+            "id": "34",
+            "gameName": "Tabletop",
+            "price": 840,
+            "categories": "Simulacion",
+            "image": "../img/tabletop.jpg"
+        },
+        {
+            "id": "35",
+            "gameName": "Sekiro",
+            "price": 700,
+            "categories": "Aventura",
+            "image": "../img/sekiro.jpg"
+        }
+    ]
+}

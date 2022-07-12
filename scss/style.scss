@@ -1,0 +1,112 @@
+
+//////PATRON DE COLORES/////
+$primary: #e5e5e5;
+$secondary:#fca311;
+$dark: #14213d;
+$info: #000000;
+$card-color: rgba(12, 18, 34, 0.767);
+$card-color-hover:rgba(79, 79, 92, 0.521);
+
+
+
+//////MODIFICANDO VARIABLES BOOTSTRAP//////
+
+$btn-padding-y:.5rem;
+$btn-padding-x:1.7rem;
+$btn-border-radius: .3rem;
+$dropdown-link-hover-bg: $secondary;
+$dropdown-border-color: none;
+$form-check-input-checked-color:$secondary;
+$form-check-input-checked-bg-color:$secondary;
+$list-group-bg:$primary;
+$list-group-border-width:none;
+$list-group-border-width: 0;
+$list-group-hover-bg:  $secondary;
+$list-group-action-color: #000;
+
+
+
+
+@import "../node_modules/bootstrap/scss/bootstrap";
+
+*{
+    font-family: 'Lato', sans-serif;
+}
+
+// TARJETAS JUEGOS (explorar juegos)
+.card-size{
+    width: 12rem;
+
+    @media (min-width: 1024px){
+        width: 15rem;
+    }
+}
+
+.btn-cart{
+    position: absolute;
+    width: 90%;
+    bottom: 0;
+    display: none;
+    transition: all .5s;
+
+    
+}
+
+.card:hover .btn-cart{
+    display: block;
+    
+}
+
+// TARJETA GENEROS JUEGO (index)
+.card-genero{
+    background-color: $card-color;
+
+
+    &:hover{
+        background-color: $card-color-hover;
+    }
+
+}
+
+//formulario
+.aprobado{
+    color: #2e691f;
+}
+.denegado{
+    color: rgb(207, 69, 64);
+}
+
+// boton de carrito
+.btn-cart-fixed {
+    position: fixed;
+    width: 55px;
+    height: 55px;
+    line-height: 55px;
+    bottom: 30px;
+    right: 30px;
+    background-color: $secondary;
+    color: $primary;
+    border-radius: 50px;
+    text-align: center;
+    box-shadow: 0 1px 10px rgba(0, 0, 0, 0.3);
+    text-decoration: none;
+    border: none;
+   
+
+    span{
+        text-decoration: none;
+    }
+}
+
+
+
+
+
+
+
+  
+
+
+
+
+

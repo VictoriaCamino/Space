@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!--------ICON---------->
+        <link rel="shortcut icon" href="../img/rocket.png">
+
+           <!--------CSS-------->
+    <link rel="stylesheet" href="../css/style.css" />
+
+        <!--------FUENTES--------->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&display=swap" rel="stylesheet">
+
+
+
+
+
+        
+
+    <title>Space</title>
+</head>
+<body class="bg-dark">
+    <div class=".container-xl">
+
+
+        <!-- HEADER -->
+        <header class="">
+            <div class="px-3 py-2 bg-primary text-white">
+                <div class="container">
+                    <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
+                        <a class="d-flex align-items-center my-2 lg-0 me-lg-auto text-white text-decoration-none" href="">
+                            <img src="../svg/space.svg" alt="logo" class="bi me-2" width="200" height="42" role="img">
+                        </a>
+                        <ul class="nav col-12 col-lg-auto my-2 justify-content-center my-md-0 text-small">
+                            <li>
+                                <a href="../index.html" class="nav-link text-info">
+                                    <img src="../svg/store.svg" alt="tienda" width="24" height="24" class="bi d-block mx-auto mb-1">
+                                    Tienda
+                                </a>
+                            </li>
+                            <li>
+                                <a href="../pages/juegos.html" class="nav-link text-info">
+                                    <img src="../svg/games.svg" alt="tienda" width="24" height="24" class="bi d-block mx-auto mb-1">
+                                    Explorar Juegos
+                                </a>
+                            </li>
+                            <li>
+                                <a href="./soporte.html" class="nav-link text-info">
+                                    <img src="../svg/support.svg" alt="tienda" width="24" height="24" class="bi d-block mx-auto mb-1">
+                                    Soporte
+                                </a>
+                            </li>
+                        </ul>
+
+                    </div>
+
+                </div>
+            </div>
+           
+        </header>
+
+        <!-- FORMULARIO -->
+        <form class="container col-md-3  needs-validation h-100" id="form">
+            <div class="mt-5 mb-3 ">
+                <label for="validationCustom01" class="form-label text-primary">Nombre de Usuario</label>
+                <input type="text" class="form-control" id="validationCustom01" aria-describedby="emailHelp" placeholder="terminator24">
+              </div>
+            <div class="mb-3">
+                <label for="validationCustomUsername" class="form-label text-primary">Email address</label>
+                <input type="email" class="form-control" id="validationCustomUsername" placeholder="nombre@ejemplo.com">
+              </div>
+          
+            <div class="mb-3">
+              <label for="password" class="form-label text-primary">Password</label>
+              <input type="password" class="form-control" id="password" placeholder="***********">
+            </div>
+            <div class="mb-3 form-check">
+              <input type="checkbox" class="form-check-input bg-primary " id="exampleCheck1">
+              <label class="form-check-label text-primary" for="exampleCheck1">Recordarme</label>
+            </div>
+            <button type="submit" class="btn btn-secondary w-100 col-md-3" id="btn-enviar">Submit</button>
+            <div class="resultado mt-2"></div>
+          </form>
+
+
+
+    </div>
+
+
+
+
+
+
+<!-----bootstrap------->
+<script src="../node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+
+<!-----js------->
+<script src="../js/validacion.js"></script>
+
+
+
+
+</body>
+</html>

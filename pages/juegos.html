@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+       <!--------ICON---------->
+       <link rel="shortcut icon" href="../img/rocket.png">
+       
+       <!--------CSS-------->
+       <link rel="stylesheet" href="../css/style.css" />
+       
+       <!--------FUENTES--------->
+       <link rel="preconnect" href="https://fonts.googleapis.com">
+       <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+       <link href="https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&display=swap" rel="stylesheet">
+        
+       <!--------tostify--------->
+       <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
+       <title>Space</title>
+</head>
+
+
+
+<body class="bg-dark">
+    <div class=".container-xl">
+        <!-- -------------HEADER ------------------->
+        <header class="">
+            <div class="px-3 py-2 bg-primary text-white">
+                <div class="container">
+                    <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
+                        <a class="d-flex align-items-center my-2 lg-0 me-lg-auto text-white text-decoration-none" href="">
+                            <img src="../svg/space.svg" alt="logo" class="bi me-2" width="200" height="42" role="img">
+                        </a>
+                        <ul class="nav col-12 col-lg-auto my-2 justify-content-center my-md-0 text-small">
+                            <li>
+                                <a href="../index.html" class="nav-link text-info">
+                                    <img src="../svg/store.svg" alt="tienda" width="24" height="24" class="bi d-block mx-auto mb-1">
+                                    Tienda
+                                </a>
+                            </li>
+                            <li>
+                                <a href="../pages/juegos.html" class="nav-link text-info">
+                                    <img src="../svg/games.svg" alt="tienda" width="24" height="24" class="bi d-block mx-auto mb-1">
+                                    Explorar Juegos
+                                </a>
+                            </li>
+                            <li>
+                                <a href="./soporte.html" class="nav-link text-info">
+                                    <img src="../svg/support.svg" alt="tienda" width="24" height="24" class="bi d-block mx-auto mb-1">
+                                    Soporte
+                                </a>
+                            </li>
+                        </ul>
+
+                    </div>
+
+                </div>
+            </div>
+            <div class="px-3 py-2 border-bottom mb-3">
+                <div class="container d-flex flex-wrap justify-content-center">
+                    <form action="" class="col-12 col-lg-auto mb-2 mb-lg-0 me-lg-auto" role="search">
+                        <input type="search" class="form-control" placeholder="Buscar..." aria-label="search" id="buscador">
+                    </form>
+                    <button class="btn btn-dark" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasWithBothOptions" aria-controls="offcanvasWithBothOptions"><img src="../svg/filter.svg" alt=""></button>
+
+                    <div class="offcanvas offcanvas-start bg-primary" data-bs-scroll="true" tabindex="-1" id="offcanvasWithBothOptions" aria-labelledby="offcanvasWithBothOptionsLabel">
+                    <div class="offcanvas-header">
+                        <h5 class="offcanvas-title" id="offcanvasWithBothOptionsLabel">Filtros</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body bg-primary">
+
+
+
+                          <h5 class="">Categoria</h5>
+
+                          <div class="list-group">
+                            <button type="button" class="list-group-item list-group-item-action item-categoria" onclick="renderizarListaJuegos(juegos, cardProductos)">Todos</button>
+                            <button type="button" class="list-group-item list-group-item-action item-categoria" onclick="filtrarJuegos('Aventura')">Aventura</button>
+                            <button type="button" class="list-group-item list-group-item-action item-categoria" onclick="filtrarJuegos('Conduccion')">Conduccion</button>
+                            <button type="button" class="list-group-item list-group-item-action item-categoria" onclick="filtrarJuegos('Shooter')">Shooter</button>
+                            <button type="button" class="list-group-item list-group-item-action item-categoria" onclick="filtrarJuegos('Simulacion')">Simulacion</button>
+                            <button type="button" class="list-group-item list-group-item-action item-categoria" onclick="filtrarJuegos('Estrategia')">Estrategia</button>
+                            <button type="button" class="list-group-item list-group-item-action item-categoria" onclick="filtrarJuegos('Mundo Abierto')">Mundo Abierto</button>
+                            <button type="button" class="list-group-item list-group-item-action item-categoria" onclick="filtrarJuegos('Horror')">Horror</button>
+                          </div>                   
+                </div>
+            </div>
+
+        </header>
+        
+
+        <!---------------- juegos --------------------->
+        <section class="container-xl">    
+
+            <div class="row row-cols-4  justify-content-center" id="cardProductos">
+                       <!-- card inyectada en javascript -->
+            </div>
+    
+          </section>
+            <!-------------------- CARRITO ---------------------->
+          <button class="btn-cart-fixed" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">
+            <span class="number-cart">0</span>
+              <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="#e5e5e5" class=" " viewBox="0 0 16 16">
+              <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z"/>
+              </svg>
+          </button>
+
+            <div class="offcanvas offcanvas-end bg-dark"" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+            <div class="offcanvas-header">
+                <!-- <h5 class="offcanvas-title" id="offcanvasRightLabel">Offcanvas right</h5> -->
+                <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+                <section class="container vh-100 ">    
+
+                    <div class="d-flex justify-content-center flex-column " id="cartContainer">
+                               <!-- card inyectada en javascript -->
+                    </div>
+                    <div class="d-flex justify-content-center flex-column align-items-center ">
+                        <h3 class="text-primary">Total:$<span id="precio-total">0</span></h3>
+                        <button class="btn btn-secondary mb-2" id="btn-comprar" onclick="finalizarCompra()">COMPRAR</button>
+                        <!-- <button class="btn btn-primary w-25 " id="vaciar-carrito" onclick="vaciarCarrito()">VACIAR CARRITO</button> -->
+          
+                      </div>
+                </section>
+            </div>
+            </div>
+        
+
+
+        <!----------------- FOOTER -------------------------------->
+        <footer class="py-3 my-4 bg-primary">
+            <p class="text-center text-muted">
+                &copy; Victoria Camino - Proyecto final del curso de JavaScript
+            </p>
+        </footer>
+
+
+    </div>
+
+
+
+    
+    <!-----bootstrap------->
+    <script src="../node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    
+    <!-----tostify------->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+    <!-----sweer alert------->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.4.17/dist/sweetalert2.all.min.js"></script>
+
+<!-- js -->
+<script src="../js/app.js"></script>
+<script src="../js/busqueda.js"></script>
+<script src="../js/filtros.js"></script>
+
+
+
+
+
+
+</body>
+</html>
