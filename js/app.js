@@ -110,14 +110,14 @@ const renderizarCarrito = () => {
              <p class="card-text "><small class="text-muted">$${juegos.price}</small></p>
        </div>
            <div class="col-2">
-               <img class="borrarJuego"  data-id="${juegos.id}" onclick="eliminarDelCarrito()" src="../svg/trash.svg" alt="">
+               <img class="borrarJuego"  data-id="${juegos.id}" onclick="eliminarJuegoDelCarrito(e)" src="../svg/trash.svg" alt="">
          </div>
    </div>
         `
         contenedorCarrito.append(cartRow)
     })
 
-    // BOTON DE C/CARD PARA ELIMINAR JUEGO DEL CARRITO
+    // BOTON DE CARD PARA ELIMINAR JUEGO DEL CARRITO
      document.querySelectorAll('.borrarJuego').forEach((borrar) => {
          borrar.addEventListener('click', eliminarJuegoDelCarrito)
      })
@@ -149,7 +149,7 @@ const eliminarJuegoDelCarrito = (e) => {
     carrito = carrito.filter((juego) => juego.id != juegoIdSelected)
     localStorage.setItem('carrito', JSON.stringify(carrito))
     
-
+    limpiarContenedor(contenedorCarrito)
     renderizarCarrito()
 }
 
@@ -157,21 +157,20 @@ const eliminarJuegoDelCarrito = (e) => {
 const agregarJuegoAlCarrito = (e) => {
    
     const juegoIdSelected = e.target.getAttribute('data-id')
-    const videojuegoSelected = juegos.find((juego) => juego.id == juegoIdSelected)
-    console.log(videojuegoSelected)
+    const juegosSelected = juegos.find((juego) => juego.id == juegoIdSelected)
+    console.log(juegosSelected)
 
     const juegoParaAgregar = {
-        ...videojuegoSelected,
+        ...juegosSelected,
         cantidad: 1
     }
 
     const juegoYaSeleccionado = carrito.find((juego) => juego.id == juegoParaAgregar.id)
 
     if (!juegoYaSeleccionado) {
-        carrito.push(juegoParaAgregar)
-        
+        carrito.push(juegoParaAgregar)      
         Toastify({
-            text: `${videojuegoSelected.gameName} agregado al carrito`,
+            text: `${juegosSelected.gameName} agregado al carrito`,
             duration: 3000,
             destination: "../pages/carrito.html",
             newWindow: false,
