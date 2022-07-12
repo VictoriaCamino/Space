@@ -12,7 +12,7 @@
             "gameName": "Terraria",
             "price":  130,
             "categories": "Aventura",
-            "image": "../img/terrarialogo.webp"
+            "image": "./img/terrarialogo.webp"
         },
         {
             "id": "3",
