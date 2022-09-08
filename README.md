@@ -1,6 +1,6 @@
 # Space - Proyecto Curso Javascript CoderHouse
 
-Desarrollo realizado con HTML/CSS/Javascript. Página 100% responsive.
+Desarrollo realizado con HTML/CSS/Bootstrap/Javascript. Página 100% responsive.
 - cuenta con carrito de compras
 - filtrado por categorias
 - busqueda 
